@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Vote {
+  id         Int      @id @default(autoincrement()) @map("id")
+  email      String   @unique
+  name       String
+  gender     Gender
+  state      String
+  ip         String
+  userAgent  String   @map("userAgent")
+  age        Int
+  candidate  String?
+
+  createdAt  DateTime @default(now()) @map("createdAt")
+  updatedAt  DateTime @updatedAt @map("updatedAt")
+}
+
+enum Gender {
+  male
+  female
+  other
+}
+
+
