@@ -7,7 +7,7 @@ It's an online voting system that allows users to vote for their favorite candid
 - **Interactive Visualizations**: Explore voting trends through dynamic charts and graphs.
 
 ### Technologies
-PollPower is built with the following technologies:
+voteNow is built with the following technologies:
 
 - **Next.js:** A powerful React framework for building fast and scalable web applications.
 - **Tailwind CSS:** A utility-first CSS framework for creating custom designs without writing CSS.
